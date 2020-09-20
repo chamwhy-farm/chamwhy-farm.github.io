@@ -6,4 +6,4 @@
 
 ~~망할 공부~~
 
-https://chamwhy-farm.github.io/chamwhy-farm/
+https://chamwhy-farm.github.io/
