@@ -47,6 +47,10 @@
             -ms-user-select: none;
             user-select: none;
         }
+        .off{
+            transform: translateY(-100%);
+            transition-duration: 1s;
+        }
         #chamwhy_icon{
             width: 8rem;
             border-radius: 50%;
@@ -56,7 +60,7 @@
     </style>
 </head>
 <body class="full no-margin">
-    <div class="flex column pinpoint full noselect">
+    <div id="startView" class="flex column pinpoint full noselect">
         <img src="./img/chamwhy.png" alt="chamwhy" id="chamwhy_icon">
         <h1 id="chamwhy_name">chamwhy</h1>
     </div>
