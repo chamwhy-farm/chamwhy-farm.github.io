@@ -1,17 +1,13 @@
-import config from "../config.js";
 (()=>{
-    const startView = document.querySelector("#startView");
-    const chamwhyBtn = document.querySelector("#chamwhy_icon");
-    chamwhyBtn.addEventListener("click", ()=>{
-        startView.className += " off";
-    });
-})();
+    const projectBtn = document.querySelector('#projectBtn');
+    const projectMenu = document.querySelector('#projectMenu');
+    const infoBtn = document.querySelector('#infoBtn');
+    const infoMenu = document.querySelector('#infoMenu');
 
-(()=>{
-    const body = document.querySelector('#body');
-    const projectHtml = document.querySelector('link[rel="import"]').import.querySelector('.projectBox');
-    console.log(config);
-    for(let i in config.projects){
-        projectHtml.querySelector('.projectName').textContext = i.name;
-    }
+    projectBtn.addEventListener('click', function(){
+        window.scrollTo({top: projectMenu.offsetTop-30, behavior: 'smooth'})
+    });
+    infoBtn.addEventListener('click', function(){
+        window.scrollTo({top: infoMenu.offsetTop-30, behavior: 'smooth'})
+    });
 })();
