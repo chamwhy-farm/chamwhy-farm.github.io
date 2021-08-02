@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 html{
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -19,6 +20,9 @@ a{
 .flex-center{
     align-items: center;
 }
+.flex-column{
+    flex-direction: column;
+}
 
 .xFit{
     max-width: 70rem;
@@ -28,4 +32,20 @@ a{
 
 .pointer{
     cursor: pointer;
+}
+html::-webkit-scrollbar{ 
+    /* 스크롤바 막대 너비 설정 */ 
+    width: 8px; 
+} 
+/* 스크롤바 막대 설정*/ 
+html::-webkit-scrollbar-thumb{ 
+    /* 스크롤바 막대 높이 설정 */ 
+    height: 17%; 
+    background-color: rgba(119, 119, 119, 0.418); 
+    /* 스크롤바 둥글게 설정 */ 
+    border-radius: 10px; 
+} 
+/* 스크롤바 뒷 배경 설정*/ 
+html::-webkit-scrollbar-track{ 
+    background-color: rgba(0, 0, 0, 0); 
 }

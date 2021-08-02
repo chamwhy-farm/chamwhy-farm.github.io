@@ -1,10 +1,10 @@
 html, body{
     margin: 0;
+    min-height: 100vh;
 }
 .warp{
-    min-height: 100%;
+    min-height: 100vh;
     position: relative;
-    padding-bottom: 4rem;
 }
 header{
     background-color: black;
@@ -31,9 +31,104 @@ header{
 }
 
 main{
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 0 0;
     min-width: calc(100vh - 9rem);
 }
+
+
+.project{
+    border-radius: 2rem;
+    box-shadow: 0 5px 10px 4px rgba(0, 0, 0, 0.2);
+    width: 30rem;
+    transition: 0.1s;
+}
+.project:hover{
+    box-shadow: 0 5px 30px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    
+}
+.projectImg{
+    height: 15rem;
+}
+.projectImg img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 2rem 0 0 2rem;
+}
+.projectInfo{
+    padding: 1.6rem 1.6rem 1.6rem 0.6rem;
+    height: 11.8rem;
+    flex-direction: column;
+}
+.projectName{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+.projectDescription{
+    flex-grow: 2;
+}
+.state div{
+    float: right;
+
+}
+
+.completedState{
+    border-radius: 1rem;
+    background-color: rgb(59, 103, 199);
+    color: rgb(255, 255, 255);
+    width: 5rem;
+    text-align: center;
+    padding: 10px 0px 11px 0px;
+    font-weight: 300;
+}
+.codingState{
+    border-radius: 1rem;
+    background-color: rgb(97, 97, 97);
+    color: rgb(230, 230, 230);
+    width: 5rem;
+    text-align: center;
+    padding: 10px 0px 11px 0px;
+    font-weight: 300;
+}
+.stateNone{
+    display: none;
+}
+
+#wiseBlock{
+    margin: 10rem 0 10rem 0;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+}
+
+#wiseSaying{
+    color: white;
+    font-family: Nanum Myeongjo, serif;
+    font-weight: 300;
+    font-size: 2rem;
+    transition: 1s;
+    position: relative;
+}
+
+#wiseSaying2{
+    color: white;
+    font-family: Nanum Myeongjo, serif;
+    font-weight: 300;
+    font-size: 2rem;
+    transition: 1s;
+    position: absolute;
+}
+
+.hideSaying{
+    opacity: 0;
+    transform: translateY(40px);
+    display: hidden;
+}
+
+
+
 
 footer{
     position: absolute !important;
