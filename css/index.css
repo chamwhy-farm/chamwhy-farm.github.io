@@ -33,8 +33,13 @@ header{
 main{
     margin: 2rem 0 0 0;
     min-width: calc(100vh - 9rem);
+    
+    padding-bottom: 4rem;
 }
 
+#projectMenu>div{
+    margin: 2rem;
+}
 
 .project{
     border-radius: 2rem;
@@ -127,6 +132,42 @@ main{
     display: hidden;
 }
 
+
+
+#infoXFit{
+    margin-bottom: 8rem;
+}
+
+#profileImg{
+    padding-right: 2rem;
+    
+    height: 8rem;
+}
+#profileImg img{
+    width: 8rem;
+    height: 8rem;
+}
+#username{
+    font-size: 2rem;
+    font-weight: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+#userEmail>a{
+    text-decoration: none;
+    color: rgb(53, 112, 221);
+}
+
+#github{
+    float: right;
+    margin-left: auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    background-color: black;
+    padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 15px 0 15px 0;
+}
 
 
 
